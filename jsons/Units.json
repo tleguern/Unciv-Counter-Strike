@@ -6,23 +6,15 @@
 		"uniques": ["Unbuildable", "Founds a new city"]
 	},
 	{
-		"name": "Terrorist",
-		"unitType": "Ranged",
-		"uniqueTo": "Terrorists",
-		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 4,
-		"uniques": ["Unbuildable", "Never appears as a Barbarian unit"]
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 0,
+		"uniques": ["Unbuildable"]
 	},
 	{
-		"name": "Counter-Terrorist",
-		"unitType": "Ranged",
-		"uniqueTo": "Counter-Terrorists",
+		"name": "Warrior",
+		"unitType": "Soldier",
 		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 4,
-		"uniques": ["Unbuildable", "Never appears as a Barbarian unit"]
+		"uniques":  ["Unbuildable"]
 	}
 ]
