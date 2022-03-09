@@ -7,6 +7,13 @@
 		"startIntroPart1": "Plant the C4 at either bombsite and prevent the Counter-Terrorists from defusing.",
 		"innerColor": [203,186,123],
 		"outerColor": [71,61,51],
+		"uniqueName": "Terrorists",
+		"uniques":
+			[
+                		"[-100]% [Culture] [in all cities]",	
+                		"[-100]% [Science] [in all cities]",
+                		"[-100]% growth [in all cities]"
+			],
 		"cities": ["Terrorists Spawn"]
 	},
 	{
@@ -17,6 +24,13 @@
 		"startIntroPart1": "Prevent the Terrorists from planting the bomb. Defuse the bomb if it has been planted.",
 		"innerColor": [12,16,19],
 		"outerColor": [93,122,147],
+		"uniqueName": "Counter-Terrorists",
+		"uniques":
+			[
+                		"[-100]% [Culture] [in all cities]",	
+                		"[-100]% [Science] [in all cities]",
+                		"[-100]% growth [in all cities]"
+			],
 		"cities": ["Counter-Terrorists Spawn"]
 	}
 ]

@@ -1,26 +1,28 @@
 [
 	{
+		"name": "Spawn",
+		"unitType": "Civilian",
+		"movement": 0,
+		"uniques": ["Unbuildable", "Founds a new city"]
+	},
+	{
 		"name": "Terrorist",
 		"unitType": "Ranged",
 		"uniqueTo": "Terrorists",
-		"replaces": "Scout",
 		"movement": 2,
 		"strength": 90,
 		"rangedStrength": 36,
 		"range": 4,
-		"cost": 500,
 		"uniques": ["Unbuildable", "Never appears as a Barbarian unit"]
 	},
 	{
 		"name": "Counter-Terrorist",
 		"unitType": "Ranged",
 		"uniqueTo": "Counter-Terrorists",
-		"replaces": "Scout",
 		"movement": 2,
 		"strength": 90,
 		"rangedStrength": 36,
 		"range": 4,
-		"cost": 500,
 		"uniques": ["Unbuildable", "Never appears as a Barbarian unit"]
 	}
 ]

@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Sand",
+		"type": "Land",
+		"movementCost": 2,
+		"RGB": [100,100,255]
+	},
+	{
+		"name": "Gravel",
+		"type": "Land",
+		"movementCost": 1,
+		"RGB": [150,150,255]
+	},
+	{
+		"name": "Wooden floor",
+		"type": "Land",
+		"movementCost": 1,
+		"RGB": [109,139,53]
+	},
+	{
+		"name": "Grass",
+		"type": "Land",
+		"movementCost": 1,
+		"RGB": [200,208,161]
+	}
+]

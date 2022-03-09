@@ -1,0 +1,26 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Guerilla era",
+		"techCost": 25,
+		"buildingCost": 60,
+		"techs": [
+			{
+				"name": "Leone 12 Gauge Super",
+				"row": 1
+			},
+			{
+				"name": "Schmidt Machine Pistol",
+				"row": 2
+			},
+			{
+				"name": "Clarion 5.56",
+				"row": 3
+			},
+			{
+				"name": "Schmidt Scout",
+				"row": 4
+			}
+		]
+	}
+]
