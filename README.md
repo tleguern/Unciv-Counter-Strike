@@ -1,32 +1,32 @@
 # README
 
-Unciv mod implementing a turn-based counter-strike-inspired game.
+This is an experiment at pushing the game Unciv in strange directions: a turn base, counter-strike-inspired game.
 
-https://yairm210.github.io/Unciv/Modders/Mods/
+Documentation:
 
-Icons source: https://thenounproject.com/browse/collection-icon/crime-investigation-134769/?p=1  
-Civilization 6: https://github.com/k4zoo/Civilization-6-Mod/tree/master/jsons  
-Unciv mod example: https://github.com/yairm210/Unciv-mod-example
+- <https://yairm210.github.io/Unciv/Modders/Mods/>
 
-## TODO
+Possible icon source:
 
-**Alpha**
+- <https://thenounproject.com/browse/collection-icon/crime-investigation-134769/?p=1>
 
-- [ ] Terrorists civilisation
-- [ ] Counter-Terrorists civilisation
-- [ ] One simple unit
-- [ ] Free for all
+Examples:
 
-**Beta**
+- (Un)Civilisation 4: <https://github.com/yairm210/Unciv-IV-mod>
+- (Un)Civilization 6: <https://github.com/k4zoo/Civilization-6-Mod>
+- The Undead: <https://github.com/SpacedOutChicken/The-Undead>
+- Unciv mod example: <https://github.com/yairm210/Unciv-mod-example>
 
-- [ ] Make it a base ruleset mode
+## Current state
 
-**0.1**
+- [X] Civilisations: Terrorists and Counter-Terrorists
+- [X] Spawn point as a non movable Settler
+- [X] Five starting Warriors
+- [X] Crashes Unciv
 
-- [ ] Hostage civilisation (as a city state?)
-- [ ] More maps ?
-- [ ] Specialized units: scout, sniper, ...
-- [ ] Spawn sites? (with startBias)
-- [ ] Bomb sites?
-- [ ] de_dust2
+## Ideas
 
+- [ ] Capturable Hostages
+- [ ] Dedicated maps (dust2, ...)
+- [ ] Specialized units: sniper, shotgun, ...
+- [ ] Predefined spawn sites with startBias
