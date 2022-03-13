@@ -5,9 +5,8 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 100,
-		"uniques": ["Founds a new city"],
+		"uniques": ["Unbuildable", "Founds a new city"]
 	},
-
 	{
 		"name": "Worker",
 		"unitType": "Civilian",

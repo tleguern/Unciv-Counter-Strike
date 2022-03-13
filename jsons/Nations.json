@@ -5,13 +5,7 @@
 		"adjective": ["Ts"],
 		"innerColor": [203,186,123],
 		"outerColor": [71,61,51],
-		"uniques": ["Starts with [Agriculture]", "Starts with [Fishing]"],
-		"cities": ["Washington", "New York", "Boston", "Philadelphia", "Atlanta", "Chicago", "Seattle", "San Francisco", "Los Angeles",
-		"Houston", "Portlnd", "St Louis", "Miami", "Buffalo", "Detroit", "New Orleans", "Baltimore", "Denver", "Cincinnati", "Dallas",
-		"Memphis", "Cleveland", "Kansas City", "San Diego", "Richmond", "Las Vegas", "Phoenix", "Albuquerque", "Minneapolis", "Pittsburgh",
-		"Oakland", "Tampa Bay", "Orlando", "Tacoma", "Santa Fe", "Olympia", "Hunt Valley", "Springfield", "Palo Alto", "Centralia", "Spokane",
-		"Jacksonville", "Savannah", "Charleston", "San Antonio", "Omaha", "Birmingham", "Honolulu", "Anchorage", "Sacramento", "Salt Lake City",
-		"Reno", "Boise", "Milwaukee", "Santa Cruz", "Monterey", "Santa Monica", "Little Rock", "Columbus", "Le Bam"]
+		"cities": ["Terrorists spawn"]
 	},
 	{
 		"name": "Counter-Terrorists",
@@ -19,9 +13,6 @@
 		"adjective": ["CTs"],
 		"innerColor": [12,16,19],
 		"outerColor": [93,122,147],
-		"uniques": ["Starts with [Mysticism]", "Starts with [The Wheel]"],
-		"cities": ["Mecca", "Medina", "Damascus", "Baghdad", "Najran", "Kufah", "Basra", "Khurasan", "Anjar", "Fustat", "Aden",
-		"Yamama", "Muscat", "Mansura", "Bukhara", "Fez", "Shiraz", "Merw", "Balkh", "Mosul", "Aydab", "Bayr Ras", "Suhar", "Taif",
-		"Hama", "Tabuk", "Sanaa", "Shihr"]
+		"cities": ["Counter-Terrorists spawn"]
 	}
 ]
