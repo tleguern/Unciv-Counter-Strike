@@ -1,0 +1,138 @@
+[	
+	{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"techRequired": "Fishing",
+	},
+	{
+		"name": "Road",
+		"turnsToBuild": 2,
+		"techRequired": "The Wheel",
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Railroad",
+		"turnsToBuild": 3,
+		"techRequired": "Railroads",
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Agriculture",
+		"uniques":["[+1 Food] <after discovering [Biology]>"]
+	},
+	{
+		"name": "Camp",
+		"turnsToBuild": 7,
+		"techRequired": "Hunting",
+	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 8,
+		"techRequired": "Animal Husbandry",
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 2,
+		"turnsToBuild": 7,
+		"uniques": ["[+1 Production] <in [Railroad] tiles>"],
+		"techRequired": "Mining",
+	},
+	{
+		"name": "Quarry",
+		"turnsToBuild": 8,
+		"uniques": ["[+1 Production] <in [Railroad] tiles>"],
+		"techRequired": "Masonry",
+	},
+	{
+		"name":"Workshop",
+		"food":-1,
+		"production":1,
+		"turnsToBuild":7,
+		"uniques": ["[+1 Production] <after discovering [Guilds]>", "[+1 Production] <after discovering [Chemistry]>"]
+	}
+	{
+		"name": "Fort",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"turnsToBuild": 10,
+		"techRequired": "Mathematics",
+		"uniques": ["Gives a defensive bonus of [25]%", "Can be built outside your borders"]
+	},
+	{
+		"name": "Winery",
+		"turnsToBuild": 8,
+		"techRequired": "Monarchy",
+	},
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"techRequired": "Calendar",
+	},
+	{
+		"name": "Windmill",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"food": 1,
+		"gold":1,
+		"turnsToBuild": 7,
+		"techRequired": "Machinery",
+		"uniques":["[+1 Production] <after discovering [Replaceable Parts]>" , "[+1 Gold] <after discovering [Electricity]>" ]
+	},
+	{
+		"name": "Watermill",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"food": 1,
+		"gold":1,
+		"turnsToBuild": 7,
+		"techRequired": "Machinery",
+		"uniques":["Must be next to [River]", "[+1 Production] <after discovering [Replaceable Parts]>", "[+2 Gold] <after discovering [Electricity]>"]
+	},
+	{
+		"name": "Whaling Boats",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"techRequired": "Optics",
+	},
+	{
+		"name": "Lumbermill",
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"production": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Replaceable Parts",
+		"uniques": ["[+1 Production] <in [Railroad] tiles>"],
+		"shortcutKey": "L"
+	},
+	{
+		"name": "Oil Well",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"turnsToBuild": 9,
+		"techRequired": "Combustion",
+		"uniques": ["Cannot be built on [Coast] tiles <before discovering [Plastics]>"],
+		"shortcutKey": "W"
+	},
+	{
+		"name": "Forest Preserve",
+		"terrainsCanBeBuiltOn": ["Forest", "Jungle"],
+		"happiness": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Scientific Method",
+		"uniques": ["[+1 Gold] for each adjacent [River]"],
+		"shortcutKey": "L"
+	},
+	
+	
+	{
+		"name": "Remove Jungle",
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"techRequired": "Iron Working",
+		"uniques": ["Can be built outside your borders"]
+	},
+]

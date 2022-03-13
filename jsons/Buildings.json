@@ -1,19 +1,489 @@
 [
+
+	// Ancient era
 	{
-		"name": "Seat of Power",
+		"name": "Palace",
 		"isNationalWonder": true,
+		"culture": 2,
+		"gold": 8,
+		"happiness": 1,
 		"cost": 1,
-		"uniques": [
-			"Indicates the capital city",
-			"Notified of new Barbarian encampments"
-		]
+		"uniques": ["Indicates the capital city"]
 	},
 	{
 		"name": "Monument",
-		"cost": 8,
-		"maintenance": 1,
-		"uniques": [
-			"Triggers victory"
-		]
+		"culture": 1,
+		"cost": 30,
+		"requiredTech": "Mysticism",
+		"uniques": ["Obsolete with [Calendar]"]
+	},
+	{
+		"name": "Stonehenge",
+		"culture": 8,
+		"isWonder": true,
+		"greatPersonPoints": {"culture": 2},
+		"requiredTech": "Mysticism",
+		"uniques": ["Obsolete with [Calendar]"]  //"Free [Monument] in all cities"]
+		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
+	},
+	{
+		"name": "Lighthouse",
+		"cost": 60,
+		"resourceBonusStats": {"food": 1},
+		"uniques": ["Can only be built in coastal cities", "[+1 Food] from [Water] tiles in this city"],
+		"requiredTech": "Sailing"
+	},
+	{
+		"name": "Granary", 
+		"cost": 60,
+		"uniques": ["[50]% Food is carried over after population increases [in this city]"]
+		"requiredTech": "Pottery"
+	},
+	{
+		"name": "Monastery",
+		"culture": 2,
+		"percentStatBonus": {"science": 10},
+		"cost": 60,
+		"uniques":["Obsolete with [Scientific Method]"],
+		"requiredTech": "Meditation"
+	},
+	{
+		"name": "Parthenon",
+		"culture": 10,
+		"isWonder": true,
+		"cost": 400,
+		"specialistSlots": {"Artist": 2},
+		"uniques": ["+[50]% great person generation in all cities", "Obsolete with [Scientific Method]"],
+		"requiredTech": "Polytheism",
+	},
+	{
+		"name": "Temple",
+		"culture": 1,
+		"happiness": 1,
+		"specialistSlots": {"Priest": 1},
+		"cost": 80,
+		"uniques": ["Provides [1] [Cathedral Followers]"],
+		"requiredTech": "Priesthood"
+	},
+	{
+		"name": "The Oracle",
+		"culture": 8,
+		"isWonder": true,
+		"cost": 150,
+		"uniques": ["Free Technology"],
+		"requiredTech": "Priesthood",
+		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing'  - Socrates"
+	},
+	{
+		"name": "Library",
+		"culture":2,
+		"cost":90,
+		"specialistSlots": {"Scientist": 2},
+		"percentStatBonus": {"science": 25},
+		"requiredTech": "Writing"
+	},
+	{
+		"name": "Forge",
+		"cost":120,
+		"specialistSlots": {"Engineer": 1},
+		"percentStatBonus": {"science": 25},
+		"food": -1,
+		"requiredTech": "Metal Casting",
+		"uniques": ["[+1 Happiness] <with [Gold Ore]>", "[+1 Happiness] <with [Silver]>", "[+1 Happiness] <with [Gems]>"]
+	},
+	{
+		"name": "Colossus",
+		"cost":250,
+		"culture": 6,
+		"gold": 5,
+		"greatPersonPoints": {"gold": 2},
+		"isWonder": true,
+		"uniques": ["Can only be built in coastal cities", "[+1 Gold] from [Water] tiles in this city"],
+		"requiredBuilding": "Forge"
+		"requiredTech": "Metal Casting",
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+	
+	
+	// Classical era
+	
+	{
+		"name": "Aqueduct",
+		"food":1,
+		"requiredTech": "Mathematics"
+	},
+	{
+		"name": "Hanging Gardens",
+		"culture": 6,
+		"isWonder": true,
+		"greatPersonPoints": {"production": 2},
+		"requiredTech": "Mathematics",
+		"uniques":["[+1 Food] in all cities"]
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.'  - F. Frankfort Moore"
+	},
+	{
+		"name": "Harbor",
+		"cost": 80,
+		"resourceBonusStats": {"food": 1},
+		"uniques": ["Can only be built in coastal cities", "[+1 Food] from [Clam] tiles in this city",
+			"[+1 Food] from [Crab] tiles in this city", "[+1 Food] from [Fish] tiles in this city"],
+		"requiredTech": "Compass"
+	},
+	{
+		"name": "The Great Library",
+		"cost": 350,
+		"culture": 8,
+		"greatPersonPoints": {"science": 6},
+		"isWonder": true,
+		"requiredBuilding": "Library",
+		"requiredTech": "Literature",
+		"uniques": ["Obsolete with [Scientific Method]"],
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+	{
+		"name": "National Epic",
+		"cost": 250,
+		"culture": 4,
+		"greatPersonPoints": {"culture": 1},
+		"uniques": ["+[100]% great person generation in this city"],
+		"isNationalWonder": true,
+		"requiredBuilding": "Library"
+		"requiredTech": "Literature"
+	},
+	{
+		"name": "Colosseum",
+		"cost": 80,
+		"happiness":1,
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Market",
+		"cost": 150,
+		"specialistSlots": {"Merchant": 1},
+		"percentStatBonus": {"gold": 25},
+		"happiness":1,
+		"uniques": ["[+1 Happiness] <with [Furs]>", "[+1 Happiness] <with [Ivory]>",
+			"[+1 Happiness] <with [Silk]>", "[+1 Happiness] <with [Whales]>"]
+		"requiredTech": "Currency"
+	},
+	{
+		"name": "Theatre",
+		"cost": 50,
+		"specialistSlots": {"Artist": 2},
+		"culture": 3,
+		"uniques": ["[+1 Happiness] <with [Dyes]>"]
+		"requiredTech": "Drama"
+	},
+	{
+		"name": "Courthouse",
+		"cost": 120,
+		"uniques": ["-[50]% building maintenance costs [in this city]"],
+		"requiredTech": "Code of Laws"
+	},
+	{
+		"name": "Chichen Itza",
+		"cost": 350,
+		"culture":6,
+		"isWonder": true,
+		"uniques": ["[+25]% City Strength from defensive buildings", "Obsolete with [Rifling]"],
+		"requiredTech": "Code of Laws",
+		"greatPersonPoints": {"science": 2},
+	},
+	{
+		"name": "Cathedral",
+		"cost": 300,
+		"requiredBuilding": "Library",
+		"specialistSlots": {"Priest": 2},
+		// This unique uses Resource mechanics to limit 1 cathedral per 3 temples
+		"uniques": ["[+1 Happiness] <with [Incense]>", "Consumes [3] [Cathedral Followers]"],
+		"percentStatBonus": {"culture": 50},
+		"requiredTech": "Music"
+	},
+	{
+		"name": "Sistine Chapel",
+		"cost": 600,
+		"culture": 10,
+		"isWonder": true,
+		"greatPersonPoints": {"Great Artist": 2},
+		"uniques": ["[+25]% [Culture] [in all cities]"],
+		"requiredTech": "Music",
+		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
+	},
+	{
+		"name": "Angkor Wat",
+		"cost": 500,
+		"culture": 8,
+		"isWonder": true,
+		//"greatPersonPoints": {"faith": 2},
+		"requiredTech": "Philosophy",
+		"specialistSlots": {"Priest": 3},
+		"uniques":["[+1 Production] from every [Priest]", "Obsolete with [Computers]"]
+		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.'  - Antonio da Magdalena"
+	},
+	{
+		"name": "Hagia Sophia",
+		"cost": 550,
+		"culture": 8,
+		"greatPersonPoints": {"Great Engineer": 2},
+		"isWonder": true,
+		"uniques": ["[-33]% tile improvement construction time" , "Obsolete with [Steam Power]"],
+		"requiredTech": "Theology",
+		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
+	},
+	{
+		"name": "Versailles",
+		"cost": 800,
+		"culture": 10,
+		"greatPersonPoints": {"Great Merchant": 2},
+		"isNationalWonder": true,
+		"uniques": ["[-25]% maintenance cost for buildings [in all cities]"],
+		"requiredTech": "Divine Right",
+//		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
+	},
+	{
+		"name": "University of Sankore",
+		"cost": 550,
+		"culture": 8,
+		"greatPersonPoints": {"Great Scientist": 2},
+		"isWonder": true,
+		"uniques": ["[+2 Science] from [Science] buildings" , "Obsolete with [Computers]"],
+		"requiredTech": "Paper",
+//		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
+	},
+	{
+		"name": "Grocer",
+		"cost": 150,
+		"specialistSlots": {"Merchant": 2},
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["[+1 Food] from [Sugar] tiles [in this city]", "[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Spices] tiles [in this city]", "[+1 Food] from [Wine] tiles [in this city]"
+		],
+		"requiredTech": "Guilds"
+	},
+	{
+		"name": "Hermitage",
+		"cost": 300,
+		"percentStatBonus": {"culture": 100},
+		"greatPersonPoints": {"Great Artist": 1},
+		"isNationalWonder": true,
+		"requiredTech": "Nationalism",
+	},
+	{
+		"name": "Taj Mahal",
+		"cost": 700,
+		"culture": 10,
+		"greatPersonPoints": {"Great Artist": 2},
+		"isWonder": true,
+		"uniques": ["Empire enters golden age"],
+		"requiredTech": "Nationalism",
+		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore"
+	},
+	{
+		"name": "University",
+		"culture": 3,
+		"cost": 200,
+		"requiredBuilding": "Library",
+		"specialistSlots": {"Scientist": 2},
+		"percentStatBonus": {"science": 25},
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Oxford University",
+		"cost": 400,
+		"requiredBuilding": "University",
+		"percentStatBonus": {"science": 100},
+		"culture": 4,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"isNationalWonder": true,
+		"uniques": ["Requires a [University] in at least [6] cities"],
+		"requiredTech": "Education",
+	},
+	{
+		"name": "Bank",
+		"cost": 200,
+		"percentStatBonus": {"gold": 50},
+		"requiredTech": "Banking"
+	},
+	{
+		"name": "Customs House",
+		"requiredBuilding": "Harbor",
+		"cost": 180,
+		"gold": 2,
+		"uniques": ["Can only be built in coastal cities"],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Statue of Liberty",
+		"culture": 6,
+		"isWonder": true,
+		"greatPersonPoints": {"Great Merchant": 2},
+		"uniques": ["[+1 Production] from every specialist [in all cities]"],
+		"requiredTech": "Democracy",
+		"requiredBuilding": "Forge",
+		"quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus"
+	},
+	{
+		"name": "Observatory",
+		"cost": 150,
+		"specialistSlots": {"Scientist": 1},
+		"percentStatBonus": {"science": 25},
+		"requiredTech": "Astronomy"
+	},
+	{
+		"name": "Cathedral",
+		"cost": 300,
+		"requiredBuilding": "Library",
+		"specialistSlots": {"Priest": 2},
+		// This unique uses Resource mechanics to limit 1 cathedral per 3 temples
+		"uniques": ["[+1 Happiness] <with [Incense]>", "Consumes [3] [Cathedral Followers]"],
+		"percentStatBonus": {"culture": 50},
+		"requiredTech": "Music"
+	},
+	{
+		"name": "Ironworks",
+		"cost": 700,
+		"food": -2,
+		"requiredBuilding": "Forge",
+		"greatPersonPoints": {"Great Engineer": 1},
+		"isNationalWonder": true,
+		"specialistSlots": {"Engineer": 3},
+		"uniques": ["Requires a [Forge] in at least [6] cities",
+			"[+50]% [Production] [in this city] <with [Iron]>", "[+50]% [Production] [in this city] <with [Coal]>", ],
+		"requiredTech": "Steel",
+	},
+	{
+		"name": "Levee",
+		"cost": 180,
+		"uniques": ["Must be on [River]", "[+1 Production] from [River] tiles in this city"],
+		"requiredTech": "Steam Power"
+	},
+	{
+		"name": "Factory",
+		"cost": 250,
+		"food": -1,
+		"percentStatBonus": {"production": 25},
+		"specialistSlots": {"Engineer": 2},
+		"requiredTech": "Assembly Line"
+	},
+	{
+		"name": "Coal Plant",
+		"cost": 150,
+		"requiredBuilding": "Factory",
+		"requiredResource": "Coal",
+		"food": -4,
+		"percentStatBonus": {"production": 50},
+		"uniques": ["Cannot be built with [Nuclear Plant]","Cannot be built with [Hydro Plant]"],
+		"requiredTech": "Assembly Line"
+	},
+	{
+		"name": "Pentagon",
+		"cost": 1250,
+		"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 2},
+		"uniques": ["New [Military] units start with [15] Experience [in all cities]"],
+		"requiredTech": "Assembly Line",
+		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
+	},
+	{
+		"name": "Broadway",
+		"cost": 800,
+		"happiness": 1,
+		"isWonder": true,
+		"percentStatBonus": {"culture": 50},
+		"greatPersonPoints": {"Great Artist": 2},
+		"uniques": ["Provides [5] [Hit Musicals]"],
+		"requiredTech": "Electricity",
+	},
+	{
+		"name": "Hospital",
+		"cost": 200,
+		"food": 3,
+		"requiredTech": "Medicine"
+	},
+	{
+		"name": "Red Cross",
+		"cost": 600,
+		"requiredBuilding": "Hospital",
+		"greatPersonPoints": {"Great Scientist": 1},
+		"culture": 2,
+		"isNationalWonder": true,
+		"uniques": ["Requires a [Hospital] in at least [6] cities"],
+//			"All newly-trained [non-air] units [in this city] receive the [Medic I] promotion"],
+		"requiredTech": "Medicine",
+	},
+	{
+		"name": "Nuclear Plant",
+		"cost": 250,
+		"food": -2,
+		"requiredBuilding": "Factory",
+		"requiredResource": "Uranium",
+		"percentStatBonus": {"production": 50},
+		"uniques": ["Cannot be built with [Coal Plant]", "Cannot be built with [Hydro Plant]"],
+		"requiredTech": "Nuclear Fission"
+	},
+	{
+		"name": "Eiffel Tower",
+		"culture": 6,
+		"requiredBuilding": "Forge",
+		"greatPersonPoints": {"Great Merchant": 2},
+		"isWonder": true,
+		"uniques": ["Gain a free [Broadcast Tower] [in all cities]"],
+		"requiredTech": "Radio",
+		"quote": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran"
+	},
+	{
+		"name": "Rock 'n' Roll",
+		"cost": 800,
+		"happiness": 1,
+		"isWonder": true,
+		"percentStatBonus": {"culture": 50},
+		"greatPersonPoints": {"Great Artist": 2},
+		"uniques": ["Provides [5] [Hit Singles]"],
+		"requiredTech": "Radio",
+	},
+	{
+		"name": "Supermarket",
+		"cost": 150,
+		"food": 1,
+		"uniques": ["[+1 Food] from [Cow] tiles [in this city]", "[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Sheep] tiles [in this city]", "[+1 Food] from [Pig] tiles [in this city]"
+		],
+		"requiredTech": "Guilds"
+	},
+	{
+		"name": "Hydro Plant",
+		"cost": 200,
+		"food": -2,
+		"requiredBuilding": "Factory",
+		"percentStatBonus": {"production": 50},
+		"uniques": ["Must be on [River]", "Cannot be built with [Coal Plant]", "Cannot be built with [Nuclear Plant]"],
+		"requiredTech": "Plastics"
+	},
+	{
+		"name": "Broadcast Tower",
+		"cost": 175,
+		"requiredBuilding": "Factory",
+		"percentStatBonus": {"culture": 50},
+		"specialistSlots": {"Artist": 2},
+		"uniques": ["[+1 Happiness] <with [Hit Singles]>", "[+1 Happiness] <with [Hit Musicals]>", "[+1 Happiness] <with [Hit Movies]>"]
+		"requiredTech": "Plastics"
+	}
+	{
+		"name": "Hollywood",
+		"cost": 1000,
+		"happiness": 1,
+		"isWonder": true,
+		"percentStatBonus": {"culture": 50},
+		"greatPersonPoints": {"Great Artist": 2},
+		"uniques": ["Provides [5] [Hit Movies]"],
+		"requiredTech": "Mass Media",
+	},
+	{
+		"name": "Laboratory",
+		"cost": 250,
+		"food": -1,
+		"specialistSlots": {"Scientist": 1},
+		"percentStatBonus": {"science": 25},
+		"requiredTech": "Superconductors"
 	}
 ]
