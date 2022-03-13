@@ -3,6 +3,6 @@
 		"name": "Desert",
 		"type": "Land",
 		"movementCost": 1,
-		"RGB": [ 230, 230, 113],
+		"RGB": [ 230, 230, 113]
 	}
 ]
